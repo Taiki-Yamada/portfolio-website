@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taiki Yamada</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="img/favicon.JPG">
+  <script src="https://kit.fontawesome.com/a31bf1382a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <div class="head-bar">
+      <h1>Taiki's Portfolio</h1>
+      <!-- ハンバーガーメニュー -->
+      <i class="fas fa-bars menu-btn" id="hamburger"></i>
+      <i class="fas fa-times fa-2x menu-btn hidden" id="close"></i>
+      <ul class="head-nav-over650px">
+        <li><a href="#profile">プロフィール</a></li>
+        <li><a href="#performance">制作実績</a></li>
+      </ul>
+    </div>
+    <ul id="spMenu">
+      <li><a href="#profile">プロフィール</a></li>
+      <li><a href="#performance">制作実績</a></li>
+    </ul>
+    <div class="header-img">
+      <h1 class="logo">
+        <span>Web Engineer</span><br>
+        Taiki Yamada
+      </h1>
+    </div>
+  </header>
+    <section id="profile">
+      <h2><i class="fas fa-user-alt"></i>プロフィール</h2>
+      <h3>山田 大暉 (Taiki Yamada)</h3>
+      <p>WEBエンジニア</p>
+      <table border="1" style="border-collapse: collapse" class="profile-container">
+        <tr><th>出身</th><td>東京</td></tr>
+        <tr><th>年齢</th><td><span data-birth="1994-05-05"></span>歳 (1994年生まれ)</td></tr>
+        <tr><th>学歴</th><td>明治大学 理工学部 電気電子生命学科</td></tr>
+        <tr><th>趣味</th><td>映画 海外ドラマ 読書 麻雀</td></tr>
+      </table>
+    </section>
+
+    <section id="performance">
+      <h2><i class="fas fa-laptop-code"></i>制作実績</h2>
+      <div class="performance-container">
+        <img src="img/movieMarks.jpg" id="movieMarks">
+        <img src="img/myportfolio.jpg" id="myPortfolio">
+      </div>
+      <div id ="mask" class="hidden"></div>
+      <div id ="movieMarksModal" class="hidden performanceModal">
+        <h3>Movie Marks</h3>
+        <p>人気の映画や現在公開されている映画の一覧を見ることができます。</p>
+        <ul>
+          <li>使用言語：HTML, CSS, JavaScript</li>
+          <li>作業時間：50時間</li>
+        </ul>
+        <div class="modalBtn">
+          <a href="http://taiki.mods.jp/moviemarks/" target=”_blank” rel=”noopener”><div class="modalLink">アプリを見る</div></a>
+          <div class="modalClose">閉じる</div>
+        </div>
+      </div>
+      <div id ="myPortfolioModal" class="hidden performanceModal">
+        <h3>Taiki's Portfolio</h3>
+        <p>現在閲覧されているポートフォリオサイトです。</p>
+        <ul>
+          <li>使用言語：HTML, CSS, JavaScript</li>
+          <li>作業時間：20時間</li>
+        </ul>
+          <div class="modalBtn modalClose">閉じる</div>
+      </div>
+        
+      </div>
+    </section>
+    <footer>
+      <p class="copyright">Copyright © 2021 Taiki All Rights Reserved.</p>
+    </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
