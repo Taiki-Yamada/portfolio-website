@@ -1,0 +1,361 @@
+body {
+  margin: 0;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "游ゴシック", YuGothic, Verdana, "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;;
+  background: #ddd;
+}
+
+header .head-bar {
+  display: flex;
+  padding:0 16px;
+  height: 64px;
+  font-family: serif;
+  position: relative;
+  z-index: 2;
+  background: #ddd;
+}
+
+header .head-bar h1 {
+  line-height: 64px;
+  margin: 0;
+}
+
+header .header-img h1 {
+  margin: 0;
+  position: absolute;
+  top: 180px;
+  left: 70px;
+  font-family: serif;
+}
+
+header h1 span {
+  font-size: 20px;
+  font-family:inherit;
+}
+
+header .head-bar .menu-btn {
+  font-size: 30px;
+  position: absolute;
+  right: 20px;
+  top: 17px;
+  cursor: pointer;
+}
+
+header .head-bar .menu-btn.fa-times {
+  right: 23px;
+}
+
+header .head-bar .menu-btn.hidden {
+  display: none;
+}
+
+header #spMenu {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  top: -10px;
+  left: 0;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  transition: .3s;
+}
+
+header #spMenu.spMenuOpen {
+  transform: translateY(72px);
+  transition: .3s;
+}
+
+header #spMenu li {
+  list-style: none;
+  box-sizing: border-box;
+  border-bottom: 1px solid #fff;
+}
+  
+header #spMenu li a {
+  background: #000;
+  box-sizing: border-box;
+  color: #fff;
+  display: block;
+  font-size: 16px;
+  line-height: 26px;
+  padding: 5px 36px;
+  text-decoration: none;
+  width: 100%;
+}
+
+header #spMenu li a:hover {
+  background: #555;
+}
+
+header .head-bar .head-nav-over650px {
+  display: none;
+}
+
+.header-img {
+  background-image: url(../img/header-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+}
+
+#profile {
+  text-align: center;
+  margin-top: 70px;
+}
+
+#profile h2 {
+  margin-bottom: 30px;
+}
+
+h2 i {
+  margin-right: 5px;
+}
+
+#profile h3, #profile p {
+  margin: 0;
+}
+
+.profile-container {
+  margin: 0 auto;
+  width: 270px;
+  margin-top: 20px;
+  line-height: 36px;
+  font-size: 12px;
+}
+
+.profile-container th {
+  width: 50px;
+  text-align: center;
+  color: #47B39D;
+}
+
+.profile-container td {
+  width: 270px;
+  text-align: left;
+  padding-left: 10px;
+}
+
+#performance {
+  text-align: center;
+  margin-top: 90px;
+}
+
+#performance h2 {
+  margin-bottom: 30px;
+}
+
+#performance .performance-container img {
+  display: block;
+  width: 270px;
+  margin: 0 auto 30px;
+  box-shadow: 6px 6px 6px rgba(0,0,0,0.4);
+  cursor: pointer;
+}
+
+#performance .performance-container img:hover {
+  transform:scale(1.05);
+  box-shadow: 6px 6px 6px rgba(0,0,0,0.7);
+  transition: 0.3s;
+}
+
+#mask {
+  background: #000;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0.4;
+  transition: .3s;
+  z-index: 3;
+}
+
+#mask.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#performance .performanceModal {
+  width: 260px;
+  height: 230px;
+  padding: 24px;
+  position: fixed;
+  left: calc(50% - 154px);
+  top: calc(50% - 139px);
+  border-radius: 5px;
+  background: #fff;
+  text-align: left;
+  font-size: 14px;
+  transition: .3s;
+  z-index: 4;
+}
+
+#performance .performanceModal ul {
+  padding-left: 30px;
+  margin-bottom: 34px;
+}
+
+#performance .performanceModal .modalBtn {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+#performance .performanceModal .modalBtn a {
+  text-decoration: none;
+}
+
+#performance .performanceModal .modalBtn .modalLink {
+  border: 2px solid #42aef1;
+  border-radius: 3px;
+  padding: 5px 10px;
+  color: #42aef1;
+}
+
+#performance .performanceModal .modalBtn .modalLink:hover {
+  background: #42aef1;
+  color: #fff;
+  transition: .3s;
+}
+
+#performance .performanceModal .modalClose {
+  line-height: 36px;
+  padding: 0 14px;
+  border-radius: 3px;
+  color: #1976d2;
+  cursor: pointer;
+  width: 42px;
+  margin: 0 0 0 auto;
+}
+
+#performance .performanceModal .modalClose:hover {
+  background: #f4f4f4;
+  transition: .3s;
+}
+
+#performance .performanceModal.hidden {
+  transform: scale(0.7,0.7);
+  opacity: 0;
+  pointer-events: none;
+}
+
+footer {
+  margin-top: 90px;
+  padding: 30px;
+  background: #000;
+  font-size: 12px;
+}
+
+footer .copyright {
+  text-align: center;
+  color: #ccc;
+  margin: 0;
+}
+
+@media (min-width:500px) {
+  .profile-container {
+    width: 360px;
+    font-size: 16px;
+  }
+
+  .profile-container th {
+    width: 60px;
+  }
+  
+  .profile-container td {
+    width: 300px;
+  }
+
+  #performance .performance-container img {
+    width: 360px;
+  }
+
+  footer {
+    font-size: 16px;
+  }
+
+}
+
+@media (min-width:650px) {
+header .head-bar .menu-btn , header #spMenu li {
+  display: none;
+}
+
+header .head-bar .head-nav-over650px {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin-left: auto;
+  width: 200px;
+  font-size: 18px;
+}
+
+header .head-bar .head-nav-over650px li a {
+  color: black;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+}
+
+.head-nav-over650px li a::after {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #333;
+  transform: scale(0, 1);
+  transform-origin: right top;
+  transition: transform 0.3s;
+}
+
+.head-nav-over650px li a:hover::after {
+  transform-origin: left top;
+  transform: scale(1, 1);
+}
+
+.header-img {
+  height: 600px;
+}
+
+header .header-img h1 {
+  font-size: 45px;
+  top: 320px;
+  left: 20%;
+}
+
+header .header-img h1 span {
+  font-size: 30px;
+}
+
+#performance .performanceModal {
+  width: 340px;
+  height: 260px;
+  left: calc(50% - 194px);
+  top: calc(50% - 154px);
+  font-size: 16px;
+}
+
+#performance .performanceModal .modalClose {
+  line-height: 40px;
+  width: 48px;
+}
+}
+
+@media (min-width:1100px) {
+#performance .performance-container {
+  display: flex;
+  justify-content: space-between;
+  width: 820px;
+  margin: 0 auto;
+}
+}
+
+@media (min-width:1432px) {
+.head-bar {
+  width: 1400px;
+  margin: 0 auto;
+}
+}
+
