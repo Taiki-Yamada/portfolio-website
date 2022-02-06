@@ -15,7 +15,7 @@ close.addEventListener("click", spMenuToggle);
 
 // 年齢自動計算
 let today = new Date();
-document.querySelectorAll("[data-birth]").forEach(function (element) {
+document.querySelectorAll("[data-birth]").forEach((element) => {
   let birth = element.getAttribute("data-birth");
   if (birth.match(/^\d{4}(-|\/)\d{2}(-|\/)\d{2}$/)) {
     let birthDate = new Date(birth);

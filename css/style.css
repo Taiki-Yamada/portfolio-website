@@ -168,6 +168,7 @@ h2 i {
   opacity: 0.4;
   transition: .3s;
   z-index: 3;
+  touch-action:none;
 }
 
 #mask.hidden {
@@ -177,17 +178,22 @@ h2 i {
 
 #performance .performanceModal {
   width: 260px;
-  height: 230px;
+  height: 264px;
   padding: 24px;
   position: fixed;
   left: calc(50% - 154px);
-  top: calc(50% - 139px);
+  top: calc(50% - 156px);
   border-radius: 5px;
   background: #fff;
   text-align: left;
   font-size: 14px;
   transition: .3s;
   z-index: 4;
+}
+
+#performance .performanceModal#myPortfolioModal {
+  height: 230px;
+  top: calc(50% - 139px);
 }
 
 #performance .performanceModal ul {
@@ -331,10 +337,16 @@ header .header-img h1 span {
 
 #performance .performanceModal {
   width: 340px;
-  height: 260px;
+  height: 294px;
   left: calc(50% - 194px);
-  top: calc(50% - 154px);
+  top: calc(50% - 171px);
   font-size: 16px;
+}
+
+#performance .performanceModal#myPortfolioModal {
+  height: 260px;
+  top: calc(50% - 154px);
+
 }
 
 #performance .performanceModal .modalClose {
